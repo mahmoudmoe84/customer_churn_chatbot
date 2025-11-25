@@ -1,0 +1,213 @@
+{
+  "test_customers": [
+    {
+      "scenario": "High Risk - Month-to-month contract with fiber optic, high charges, no security services",
+      "customer_data": {
+        "gender": "Female",
+        "SeniorCitizen": 0,
+        "Partner": "No",
+        "Dependents": "No",
+        "tenure": 3,
+        "PhoneService": "Yes",
+        "MultipleLines": "Yes",
+        "InternetService": "Fiber optic",
+        "OnlineSecurity": "No",
+        "OnlineBackup": "No",
+        "DeviceProtection": "No",
+        "TechSupport": "No",
+        "StreamingTV": "Yes",
+        "StreamingMovies": "Yes",
+        "Contract": "Month-to-month",
+        "PaperlessBilling": "Yes",
+        "PaymentMethod": "Electronic check",
+        "MonthlyCharges": 89.5,
+        "TotalCharges": 268.5
+      },
+      "expected_risk": "HIGH"
+    },
+    {
+      "scenario": "Low Risk - Senior citizen with long tenure, two-year contract, basic services",
+      "customer_data": {
+        "gender": "Male",
+        "SeniorCitizen": 1,
+        "Partner": "Yes",
+        "Dependents": "Yes",
+        "tenure": 68,
+        "PhoneService": "Yes",
+        "MultipleLines": "No",
+        "InternetService": "DSL",
+        "OnlineSecurity": "Yes",
+        "OnlineBackup": "Yes",
+        "DeviceProtection": "Yes",
+        "TechSupport": "Yes",
+        "StreamingTV": "No",
+        "StreamingMovies": "No",
+        "Contract": "Two year",
+        "PaperlessBilling": "No",
+        "PaymentMethod": "Bank transfer (automatic)",
+        "MonthlyCharges": 54.75,
+        "TotalCharges": 3722.5
+      },
+      "expected_risk": "LOW"
+    },
+    {
+      "scenario": "Medium Risk - No internet service, short tenure, month-to-month",
+      "customer_data": {
+        "gender": "Female",
+        "SeniorCitizen": 0,
+        "Partner": "Yes",
+        "Dependents": "No",
+        "tenure": 12,
+        "PhoneService": "Yes",
+        "MultipleLines": "Yes",
+        "InternetService": "No",
+        "OnlineSecurity": "No internet service",
+        "OnlineBackup": "No internet service",
+        "DeviceProtection": "No internet service",
+        "TechSupport": "No internet service",
+        "StreamingTV": "No internet service",
+        "StreamingMovies": "No internet service",
+        "Contract": "Month-to-month",
+        "PaperlessBilling": "Yes",
+        "PaymentMethod": "Mailed check",
+        "MonthlyCharges": 29.85,
+        "TotalCharges": 358.2
+      },
+      "expected_risk": "MEDIUM"
+    },
+    {
+      "scenario": "Very High Risk - New customer, fiber optic, no add-ons, electronic check",
+      "customer_data": {
+        "gender": "Male",
+        "SeniorCitizen": 0,
+        "Partner": "No",
+        "Dependents": "No",
+        "tenure": 1,
+        "PhoneService": "Yes",
+        "MultipleLines": "No",
+        "InternetService": "Fiber optic",
+        "OnlineSecurity": "No",
+        "OnlineBackup": "No",
+        "DeviceProtection": "No",
+        "TechSupport": "No",
+        "StreamingTV": "No",
+        "StreamingMovies": "No",
+        "Contract": "Month-to-month",
+        "PaperlessBilling": "Yes",
+        "PaymentMethod": "Electronic check",
+        "MonthlyCharges": 70.0,
+        "TotalCharges": 70.0
+      },
+      "expected_risk": "HIGH"
+    },
+    {
+      "scenario": "Low Risk - Loyal customer with comprehensive services and two-year contract",
+      "customer_data": {
+        "gender": "Female",
+        "SeniorCitizen": 1,
+        "Partner": "Yes",
+        "Dependents": "Yes",
+        "tenure": 72,
+        "PhoneService": "Yes",
+        "MultipleLines": "Yes",
+        "InternetService": "Fiber optic",
+        "OnlineSecurity": "Yes",
+        "OnlineBackup": "Yes",
+        "DeviceProtection": "Yes",
+        "TechSupport": "Yes",
+        "StreamingTV": "Yes",
+        "StreamingMovies": "Yes",
+        "Contract": "Two year",
+        "PaperlessBilling": "No",
+        "PaymentMethod": "Credit card (automatic)",
+        "MonthlyCharges": 103.7,
+        "TotalCharges": 7466.4
+      },
+      "expected_risk": "LOW"
+    },
+    {
+      "scenario": "Medium-High Risk - Mid-tenure, one-year contract ending soon, fiber optic",
+      "customer_data": {
+        "gender": "Male",
+        "SeniorCitizen": 0,
+        "Partner": "Yes",
+        "Dependents": "Yes",
+        "tenure": 14,
+        "PhoneService": "Yes",
+        "MultipleLines": "Yes",
+        "InternetService": "Fiber optic",
+        "OnlineSecurity": "Yes",
+        "OnlineBackup": "No",
+        "DeviceProtection": "No",
+        "TechSupport": "No",
+        "StreamingTV": "Yes",
+        "StreamingMovies": "Yes",
+        "Contract": "One year",
+        "PaperlessBilling": "Yes",
+        "PaymentMethod": "Electronic check",
+        "MonthlyCharges": 84.35,
+        "TotalCharges": 1180.9
+      },
+      "expected_risk": "MEDIUM"
+    },
+    {
+      "scenario": "High Risk - DSL user, no partner/dependents, month-to-month, low engagement",
+      "customer_data": {
+        "gender": "Female",
+        "SeniorCitizen": 0,
+        "Partner": "No",
+        "Dependents": "No",
+        "tenure": 8,
+        "PhoneService": "Yes",
+        "MultipleLines": "No",
+        "InternetService": "DSL",
+        "OnlineSecurity": "No",
+        "OnlineBackup": "No",
+        "DeviceProtection": "No",
+        "TechSupport": "No",
+        "StreamingTV": "No",
+        "StreamingMovies": "No",
+        "Contract": "Month-to-month",
+        "PaperlessBilling": "Yes",
+        "PaymentMethod": "Electronic check",
+        "MonthlyCharges": 39.65,
+        "TotalCharges": 317.2
+      },
+      "expected_risk": "HIGH"
+    },
+    {
+      "scenario": "Edge Case - No phone service but has internet",
+      "customer_data": {
+        "gender": "Male",
+        "SeniorCitizen": 0,
+        "Partner": "Yes",
+        "Dependents": "No",
+        "tenure": 24,
+        "PhoneService": "No",
+        "MultipleLines": "No phone service",
+        "InternetService": "Fiber optic",
+        "OnlineSecurity": "Yes",
+        "OnlineBackup": "Yes",
+        "DeviceProtection": "Yes",
+        "TechSupport": "Yes",
+        "StreamingTV": "No",
+        "StreamingMovies": "No",
+        "Contract": "One year",
+        "PaperlessBilling": "No",
+        "PaymentMethod": "Bank transfer (automatic)",
+        "MonthlyCharges": 75.25,
+        "TotalCharges": 1806.0
+      },
+      "expected_risk": "LOW"
+    }
+  ],
+  "usage_instructions": {
+    "description": "These are synthetic test customers designed to evaluate the model's predictions across different risk scenarios",
+    "how_to_use": "Send these customer profiles to the chatbot using the predict_churn_for_hypothetical_customer tool",
+    "chatbot_query_examples": [
+      "Predict churn for this new customer: {paste customer_data JSON}",
+      "What's the churn risk for a customer with these characteristics: {paste customer_data JSON}",
+      "Can you analyze this hypothetical customer and tell me their churn probability: {paste customer_data JSON}"
+    ]
+  }
+}

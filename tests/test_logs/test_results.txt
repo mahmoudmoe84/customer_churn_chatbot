@@ -1,0 +1,91 @@
+============================================================
+📊 TEST REPORT SUMMARY
+============================================================
+🕐 Timestamp: 2025-11-25 01:07:26
+
+✅ Passed: 8/8 (100.0%)
+⚠️  Warnings: 0/8
+❌ Failed: 0/8 (0.0%)
+
+📈 Average Judge Score: 5.00/5
+🔄 Average Iterations: 1.0
+
+📑 By Category:
+   basic_query: 1/1
+   filtered_query: 1/1
+   prediction: 2/2
+   comparison: 1/1
+   deep_analysis: 1/1
+   context_awareness: 1/1
+   financial_analysis: 1/1
+
+============================================================
+📋 DETAILED TEST RESULTS
+============================================================
+
+✅ PASS | basic_churn_rate
+   Category: basic_query
+   Query: What is the overall churn rate?
+   Tools Used: query_overall_churn_rate
+   Iterations: 1
+   Judge Score: 5/5
+   Judge Reason: The response accurately provides the churn rate, includes relevant data, offers insights, and maintains a professional tone.
+
+✅ PASS | filtered_churn_rate
+   Category: filtered_query
+   Query: What's the churn rate for Month-to-month customers?
+   Tools Used: query_churn_rate_with_filter
+   Iterations: 1
+   Judge Score: 5/5
+   Judge Reason: The response accurately provides the churn rate and relevant data for Month-to-month customers, directly answers the user's question, includes insightful recommendations, and maintains a professional tone.
+
+✅ PASS | high_risk_identification
+   Category: prediction
+   Query: Show me top 5 high-risk customers
+   Tools Used: find_high_risk_customers
+   Iterations: 1
+   Judge Score: 5/5
+   Judge Reason: The response accurately lists high-risk customers with their churn probabilities, directly answers the user's query, includes all expected elements, and maintains a professional tone.
+
+✅ PASS | retained_vs_high_risk_comparison
+   Category: comparison
+   Query: Compare top 5 retained vs top 5 high risk customers
+   Tools Used: compare_retained_vs_high_risk_customers
+   Iterations: 1
+   Judge Score: 5/5
+   Judge Reason: The response accurately presents factual data, directly answers the user's query, includes all expected elements such as numbers, insights, and recommendations, and maintains a clear and professional tone.
+
+✅ PASS | pattern_analysis
+   Category: deep_analysis
+   Query: Analyze high-risk customer patterns and give me recommendations
+   Tools Used: analyze_high_risk_customer_patterns
+   Iterations: 1
+   Judge Score: 5/5
+   Judge Reason: The response provides accurate data, directly addresses the user's request for analysis and recommendations, includes all expected elements, and maintains a clear and professional tone.
+
+✅ PASS | customer_prediction
+   Category: prediction
+   Query: Predict churn for customer 7590-VHVEG
+   Tools Used: predict_churn_for_customer
+   Iterations: 1
+   Judge Score: 5/5
+   Judge Reason: The response accurately provides the churn probability and risk classification for the customer, directly answers the user's query, includes all expected elements such as the probability, risk level, and detailed recommendations, and maintains a professional tone throughout.
+
+✅ PASS | context_followup
+   Category: context_awareness
+   Query: Tell me about retained customers
+   Tools Used: get_top_retained_customers_financial_analysis
+   Iterations: 1
+   Judge Score: 5/5
+   Judge Reason: The response provides accurate data about retained customers, directly answers the user's query, includes detailed financial insights and strategic recommendations, and maintains a clear and professional tone.
+
+✅ PASS | financial_impact
+   Category: financial_analysis
+   Query: What's the financial impact of high-risk customers?
+   Tools Used: get_high_risk_customers_with_financial_impact
+   Iterations: 1
+   Judge Score: 5/5
+   Judge Reason: The response provides accurate financial data, directly addresses the user's question about the financial impact of high-risk customers, includes all expected elements such as revenue, lifetime value, and risk, and maintains a clear and professional tone throughout.
+
+============================================================
+
